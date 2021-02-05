@@ -9,3 +9,8 @@
 User.destroy_all
 Team.destroy_all
 Sport.destroy_all
+
+eric = User.create([{ username: 'EKim123', password: 'GOAT321', email: 'EK123@gmail.com', age: 27 }])
+basketball = Sport.create([{sport_name: "Basketball"}])
+Team.create([{ sportsId: 1, team_name: 'Cavaliers', city: 'Cleveland', roster: 'Delly, Sexton, Drummond, McGee, Okoro, Garland, Love, Allen, Prince, Wade, Stevens, Windler, Nance, Osman, Dotson', headlines: 'Cavs lose late to Clippers', schedule: 'Milwaukee' }])
+
