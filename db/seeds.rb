@@ -15,9 +15,24 @@ User.destroy_all
 Team.destroy_all
 Sport.destroy_all
 
-eric = User.create([{ username: 'EKim123', password: 'GOAT321', email: 'EK123@gmail.com', age: 27 }])
-basketball = Sport.create([{sport_name: "Basketball"}])
-Team.create([{ sportsId: 1, team_name: 'Cavaliers', city: 'Cleveland', roster: 'Delly, Sexton, Drummond, McGee, Okoro, Garland, Love, Allen, Prince, Wade, Stevens, Windler, Nance, Osman, Dotson', headlines: 'Cavs lose late to Clippers', schedule: 'Milwaukee' }])
+users = User.create([
+    {username: 'EKim123', password: 'GOAT321', email: 'EK123@gmail.com', age: 27},
+    {username: 'GMist24', password: 'Rookie24', email: 'gfm@aol.com', age: 30},
+    {username: 'AnnieZ', password: 'ProCoder', email: 'Zheng@hotmail.com', age: 25}
+])
+
+sports = Sport.create([
+    {sport_name: "Basketball"},
+    {sport_name: "Football"},
+    {sport_name: "Hockey"},
+    {sport_name: "Baseball"}
+])
+
+teams = Team.create([
+    {sport_id: sports[0].id, team_name: 'Cavaliers', city: 'Cleveland', roster: 'Delly, Sexton, Drummond, McGee, Okoro, Garland, Love, Allen, Prince, Wade, Stevens, Windler, Nance, Osman, Dotson', coach: "JB Bickerstaff", sport_name: sports[0].sport_name},
+    {sport_id: sports[1].id, team_name: 'Giants', city: 'New York', roster: 'Jones, Barkley, Engram, Gallman, Lawrence, Williams, Slayton, Martinez, Tate, Hernandez, Ryan, Bradberry, Gano, Peppers, Shepard, Ximines', coach: "Joe Judge", sport_name: sports[1].sport_name},
+    {sport_id: sports[2].id, team_name: 'Rangers', city: 'New York', roster: 'Bitetto, Lemieux, Kreider, Fox, Strome, Zibanejad, Rooney, Johnson, Gauthier, Panarin', coach: "David Quinn", sport_name: sports[2].sport_name}
+])
 
 # team = Team.create([{Cleveland Cavaliers}])
 # freeAgents = Free_Agents.create([])

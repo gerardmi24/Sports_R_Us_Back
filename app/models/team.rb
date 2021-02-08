@@ -1,4 +1,4 @@
 class Team < ApplicationRecord
     has_many :favorites
-    belongs_to :sports
+    belongs_to :sport
 end
