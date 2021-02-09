@@ -21,11 +21,12 @@ class FavoritesController < ApplicationController
     end
 
     def new
-        favorite = Favorite.new
+        @favorite = Favorite.new
     end
 
     def create
-        favorite = Favorite.create!(fav_params)
+        @favorite = Favorite.create(fav_params)
+        render json: @favorite
     end
 
     def destroy
@@ -37,7 +38,7 @@ class FavoritesController < ApplicationController
     private
 
     def fav_params
-        params.require(:favorite).permit(:user_id, team_id)
+        params.require(:favorite).permit(:user_id, :team_id)
     end
 
 end
