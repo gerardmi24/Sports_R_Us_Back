@@ -39,7 +39,9 @@ teams = Team.create([
 ])
 
 favorites = Favorite.create([
-    {user_id: users[0].id, team_id: teams[0].id}
+    {user_id: users[0].id, team_id: teams[0].id},
+    {user_id: users[2].id, team_id: teams[1].id}
+
 ])
 
 # team = Team.create([{Cleveland Cavaliers}])
