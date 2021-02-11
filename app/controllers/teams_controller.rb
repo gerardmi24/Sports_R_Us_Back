@@ -29,6 +29,7 @@ class TeamsController < ApplicationController
     end
 
     def update
+        # byebug
         team = Team.find(params[:id])
         team.update(team_params)
         render json: team
