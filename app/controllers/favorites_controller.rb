@@ -25,8 +25,13 @@ class FavoritesController < ApplicationController
     end
 
     def create
-        @favorite = Favorite.create(fav_params)
-        render json: @favorite
+        found_user = User.find(params[:user_id])
+        if !found_user.favorites.pluck(:team_id).include?(params[:team_id])
+            @favorite = Favorite.create(fav_params)
+            render json: @favorite
+        else
+            render json: {message: "Already one of your Favorite Teams!"}
+        end
     end
 
     def destroy
