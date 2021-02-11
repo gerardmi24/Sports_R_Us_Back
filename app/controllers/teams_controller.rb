@@ -21,7 +21,23 @@ class TeamsController < ApplicationController
 
     def show
         team = Team.find(params[:id])
-        render json: favorite
+        render json: team
+    end
+
+    def edit
+        team = Team.find(params[:id])
+    end
+
+    def update
+        team = Team.find(params[:id])
+        team.update(team_params)
+        render json: team
+    end
+
+    private
+
+    def team_params
+        params.permit(:sport_id, :team_name, :city, :roster, :coach, :sport_name)
     end
 
 end
