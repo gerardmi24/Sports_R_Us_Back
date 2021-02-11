@@ -35,15 +35,16 @@ class FavoritesController < ApplicationController
     end
 
     def destroy
+        # byebug
         favorite = Favorite.find(params[:id])
         favorite.destroy
-        render json: favorite
+        render json: {}
     end
 
     private
 
     def fav_params
-        params.require(:favorite).permit(:user_id, :team_id)
+        params.permit(:user_id, :team_id)
     end
 
 end
