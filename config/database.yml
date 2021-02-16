@@ -83,3 +83,4 @@ production:
   database: Sports_R_Us_Back_production
   username: Sports_R_Us_Back
   password: <%= ENV['SPORTS_R_US_BACK_DATABASE_PASSWORD'] %>
+  # password: <%= ENV['Sports_R_Us_Back_production_DATABASE_PASSWORD'] %>
