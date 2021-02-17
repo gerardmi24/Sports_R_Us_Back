@@ -46,7 +46,9 @@ teams = Team.create([
     {sport_id: sports[0].id, team_name: 'Mavericks', city: 'Dallas', roster: 'Doncic, Porzingis, Richardson, Hardaway Jr, Kleber, Brunson, Finney-Smith', coach: "Rick Carlisle", sport_name: sports[0].sport_name},
     {sport_id: sports[0].id, team_name: 'Pistons', city: 'Detroit', roster: 'Griffin, Grant, Jackson, Hayes, Bey, Wright, Plumlee', coach: "Dwane Casey", sport_name: sports[0].sport_name},
     {sport_id: sports[0].id, team_name: 'Knicks', city: 'New York', roster: 'Robinson, Toppin, Knox, Rose, Barrett, Gibson, Quickley, Peyton', coach: "Tom Thibs", sport_name: sports[0].sport_name},
+    {sport_id: sports[0].id, team_name: '76ers', city: 'Philadelphia', roster: 'Simmons, Embiid, Curry, Green, Howard, Harris, Milton, Korkmaz', coach: "Doc Rivers", sport_name: sports[0].sport_name},
     {sport_id: sports[0].id, team_name: 'Raptors', city: 'Toronto', roster: 'Lowry, VanVleet, Siakam, Anunoby, Boucher, Powell, Baynes', coach: "Nick Nurse", sport_name: sports[0].sport_name},
+    {sport_id: sports[0].id, team_name: 'Wizards', city: 'Washington', roster: 'Westbrook, Beal, Hachimura, Avdija, Bertans, Magner, Bryant', coach: "Scott Brooks", sport_name: sports[0].sport_name},
     {sport_id: sports[2].id, team_name: 'Bruins', city: 'Boston', roster: 'Pastrnak, DeBrusk, Rask, Smith, Marchand, Bergeron, McAvoy', coach: "Bruce Cassidy", sport_name: sports[2].sport_name},
     {sport_id: sports[2].id, team_name: 'Stars', city: 'Dallas', roster: 'Seguin, Benn, Pavelski, Bishop, Radulov, Hintz', coach: "Rick Bowness", sport_name: sports[2].sport_name},
     {sport_id: sports[2].id, team_name: 'Islanders', city: 'New York', roster: 'Barzal, Sorokin, Martin, Aho, Lee, Varlamov, Schneider, Wahlstrom', coach: "Barry Trotz and Jim Hiller", sport_name: sports[2].sport_name},
@@ -61,6 +63,9 @@ teams = Team.create([
     {sport_id: sports[1].id, team_name: 'Patriots', city: 'New England', roster: 'Newton, Edelman, Gilmore, Harris, Harry, Burkhead, Winovich, McCourty', coach: "Bill Belichick", sport_name: sports[1].sport_name},
     {sport_id: sports[1].id, team_name: 'Giants', city: 'New York', roster: 'Jones, Barkley, Engram, Lawrence, Slayton, Martinez, Bradberry, Peppers, Shepard, Ximines', coach: "Joe Judge", sport_name: sports[1].sport_name},
     {sport_id: sports[1].id, team_name: 'Jets', city: 'New York', roster: 'Darnold, Maye, Mims, Flacco, Gore, Crowder, Mosley, Perriman, Ficken', coach: "Robert Saleh", sport_name: sports[1].sport_name},
+    {sport_id: sports[1].id, team_name: 'Eagles', city: 'Philadelphia', roster: 'Wentz, Hurts, Jackson, Ertz, Goedert, Slay, Cox, Peters', coach: "Nick Sirianni", sport_name: sports[1].sport_name},
+    {sport_id: sports[1].id, team_name: 'Football Team', city: 'Washington', roster: 'Smith, Gibson, McLaurin, Thomas, Kerrigan, Sweat, Bostic, Collins', coach: "Ron Rivera", sport_name: sports[1].sport_name},
+
 ])
 
 favorites = Favorite.create([
